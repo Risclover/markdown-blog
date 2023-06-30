@@ -12,7 +12,7 @@ function App({ postList }) {
   const [postPage, setPostPage] = useState(false);
 
   return (
-    <div className="bg-white-100 min-h-screen font-rubik">
+    <div className="bg-white-100 min-h-screen font-rubik dark:bg-gray-900">
       <Header>
         <NavBar />
         {!postPage && <HomeHeader />}

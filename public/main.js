@@ -56,6 +56,8 @@ const getPosts = () => {
           date: metadata.date ? metadata.date : "No date given",
           timestamp: timestamp ? timestamp : "No timestamp given",
           content: content ? content : "No content given",
+          toc: metadata.toc ? metadata.toc : "",
+          category: metadata.category ? metadata.category : "",
         };
         postlist.push(post);
         if (i === files.length - 1) {

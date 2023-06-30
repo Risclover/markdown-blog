@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "media",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +13,7 @@ module.exports = {
     fontFamily: {
       wotfard: ["Wotfard Regular", "sans-serif"],
       rubik: ["Rubik", "sans-serif"],
+      logo: ["Itim", "cursive"],
     },
     extend: {},
   },

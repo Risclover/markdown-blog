@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import postList from "../../posts.json";
 import BlogPost from "../../components/BlogPost";
 import { Link } from "react-router-dom";
-import Categories from "./Categories";
+import Categories from "./Categories/Categories";
 import Header from "../../components/Header";
 import NavBar from "../../components/NavBar";
 import HomeHeader from "../../components/HomeHeader";
@@ -25,9 +25,10 @@ export default function Home() {
   });
 
   return (
-    <main className="container px-12 py-24 font-sans mx-auto max-w-6xl w-full flex flex-col">
+    <main className="container px-12 py-24 font-sans mx-auto max-w-5xl w-full flex flex-col">
+      <Categories />
       <section className="mr-16">
-        <h2 className="uppercase text-base font-medium tracking-widest text-pink-500 mb-9">
+        <h2 className="uppercase text-lg font-medium tracking-widest text-pink-500 mb-7">
           Latest and Greatest
         </h2>
         <div className="grid grid-cols-1 gap-1 grid-flow-row ">
@@ -38,7 +39,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <Categories />
     </main>
   );
 }
