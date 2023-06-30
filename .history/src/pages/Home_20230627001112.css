@@ -1,0 +1,13 @@
+.post {
+  border: 1px solid red;
+  width: 400px;
+  padding: 30px;
+  margin: 20px auto;
+}
+
+.posts {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+}
