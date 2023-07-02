@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { slide as Menu } from "react-burger-menu";
@@ -14,12 +14,35 @@ export default function NavBar() {
     document.body.style.overflow = "hidden";
   };
 
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  // Load user preference on initial render
+  useEffect(() => {
+    const prefersDarkMode =
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setIsDarkMode(prefersDarkMode);
+  }, []);
+
+  // Toggle dark mode
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    // Update the class on the root element to toggle dark mode globally
+    document.documentElement.classList.toggle("dark", !isDarkMode);
+  };
   return (
-    <div className="py-2 flex items-end justify-between pt-5">
-      <NavLink to="/" className="text-3xl font-logo min-w-fit">
+    <div className="py-2 flex items-end justify-between pt-5 text-4xl text-gray-900">
+      <NavLink to="/blog" className="text-3xl font-logo min-w-fit text-white">
         Sara Dunlop
       </NavLink>
-      <Around duration={750} />
+
+      {/* Light/dark mode toggle */}
+      <Around
+        className="text-amber-400"
+        duration={750}
+        toggled={!isDarkMode}
+        onToggle={toggleDarkMode}
+      />
 
       <FiMenu
         className="text-3xl md:hidden cursor-pointer hover:text-violet-300 transition duration-300"

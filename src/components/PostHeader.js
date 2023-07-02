@@ -1,21 +1,39 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 
-export default function PostHeader({ postList }) {
+export default function PostHeader({ postList, categoriesList }) {
   const { id } = useParams();
+  const [category, setCategory] = useState();
 
   const post = postList.find((post) => post.id === +id);
+
+  console.log(postList);
+
+  console.log("zzz", categoriesList);
+
+  useEffect(() => {
+    Object.values(categoriesList).map((category) =>
+      category.category === post?.category ? setCategory(category.id) : ""
+    );
+  });
+
+  console.log("category", category);
   return (
-    <div className="h-72 flex flex-col justify-end">
-      <div className="mt-20 mb-5 text-slate-200 capitalize">
-        <NavLink to="/">
+    <div className="h-72 flex flex-col justify-end text-slate-50">
+      <div className="mt-20 mb-5 text-slate-50 capitalize">
+        <NavLink to="/blog" className="hover:text-gray-400">
           <span>Home</span>
         </NavLink>
         <span className="mx-5">&gt;</span>
-        <span>{post?.category}</span>
+        <NavLink
+          to={`/blog/categories/${category}`}
+          className="hover:text-gray-400"
+        >
+          <span>{post?.category}</span>
+        </NavLink>
       </div>
-      <div className="text-4xl font-medium text-gray-50">{post?.title}</div>
-      <div className="mt-4 text-lg font-normal text-slate-200 pb-14">
+      <div className="text-4xl font-medium leading-snug">{post?.title}</div>
+      <div className="mt-2 text-lg font-normal pb-14 text-slate-400">
         {post?.subtitle !== "No subtitle given" ? post?.subtitle : ""}
       </div>
     </div>

@@ -1,0 +1,9 @@
+.toc {
+  position: sticky;
+  top: 148px;
+  max-height: calc(100vh - 148px);
+  overflow: auto;
+  padding-bottom: 16px;
+  margin-left: 70px;
+  margin-top: 4px;
+}

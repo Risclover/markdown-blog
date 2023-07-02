@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
-}
-
-.bm-burger-bars {
-  background: white;
+.dark-mode {
+  @apply bg-gray-900 text-white;
 }
 
 @layer utilities {
@@ -76,9 +68,11 @@
     overflow-wrap {
       @apply break-words;
     }
+  }
 
-    font-family {
-      @apply "Valera Round";
+  h1 {
+    font-size {
+      @apply text-5xl;
     }
   }
 }
