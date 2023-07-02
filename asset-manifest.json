@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/markdown-blog/static/css/main.0f526400.css",
-    "main.js": "/markdown-blog/static/js/main.50f1ce84.js",
-    "static/media/avatar.png": "/markdown-blog/static/media/avatar.a2d4113656ebadd7b553.png",
-    "static/media/Wotfard-Regular.woff": "/markdown-blog/static/media/Wotfard-Regular.a8f6825022171f73638a.woff",
-    "index.html": "/markdown-blog/index.html",
-    "main.0f526400.css.map": "/markdown-blog/static/css/main.0f526400.css.map",
-    "main.50f1ce84.js.map": "/markdown-blog/static/js/main.50f1ce84.js.map"
+    "main.css": "/blog/static/css/main.22d6c75e.css",
+    "main.js": "/blog/static/js/main.0613acc8.js",
+    "static/media/avatar2.png": "/blog/static/media/avatar2.a95334d27599c3fc5611.png",
+    "static/media/Wotfard-Regular.woff": "/blog/static/media/Wotfard-Regular.a8f6825022171f73638a.woff",
+    "index.html": "/blog/index.html",
+    "main.22d6c75e.css.map": "/blog/static/css/main.22d6c75e.css.map",
+    "main.0613acc8.js.map": "/blog/static/js/main.0613acc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f526400.css",
-    "static/js/main.50f1ce84.js"
+    "static/css/main.22d6c75e.css",
+    "static/js/main.0613acc8.js"
   ]
 }
