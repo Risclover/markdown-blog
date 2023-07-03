@@ -31,7 +31,7 @@ export default function NavBar() {
     document.documentElement.classList.toggle("dark", !isDarkMode);
   };
   return (
-    <div className="py-2 flex items-end justify-between pt-5 text-4xl text-gray-900">
+    <div className="py-2 flex items-end justify-between pt-5 text-4xl text-gray-900 mb-4 bg-slate-800 z-50">
       <NavLink to="/blog" className="text-3xl font-logo min-w-fit text-white">
         Sara Dunlop
       </NavLink>
@@ -44,11 +44,11 @@ export default function NavBar() {
         onToggle={toggleDarkMode}
       />
 
-      <FiMenu
+      {/* <FiMenu
         className="text-3xl md:hidden cursor-pointer hover:text-violet-300 transition duration-300"
         onClick={setHidden}
       />
-      <SideBar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      <SideBar showSidebar={showSidebar} setShowSidebar={setShowSidebar} /> */}
       {/* <FiMenu className="text-3xl md:hidden cursor-pointer hover:text-violet-300 transition duration-300" />
       <ul className="flex justify-end max-w-full w-full font-wotfard pb-0.5 hidden md:flex">
         <li className="mx-2 mr-6 cursor-pointer">

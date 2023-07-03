@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark-mode {
-  @apply bg-gray-900 text-white;
-}
-
 @layer utilities {
   img,
   picture,
@@ -36,6 +32,9 @@
     margin {
       @apply m-0;
     }
+  }
+  html {
+    scroll-behavior: smooth;
   }
   body {
     line-height {

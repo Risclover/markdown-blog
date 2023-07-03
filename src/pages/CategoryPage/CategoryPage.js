@@ -12,7 +12,7 @@ export default function CategoryPage({ categories, postList }) {
   }, []);
 
   return (
-    <div className="w-full h-full bg-gray-100 dark:bg-gray-900 min-h-screen pt-32 px-8">
+    <div className="w-full h-full bg-gray-100 dark:bg-gray-900 min-h-screen pt-16 sm:pt-32 px-8 pb-16">
       <div className="lg:max-w-5xl w-full m-auto">
         <h1 className="text-[38px] font-bold ml-8 mb-4 dark:text-gray-50">
           {categories[id - 1]?.category}
@@ -37,7 +37,7 @@ export default function CategoryPage({ categories, postList }) {
                     </p>
                     <div className="pt-4 leading-7 font-bold flex items-center dark:text-gray-50">
                       Read more{" "}
-                      <HiMiniArrowRight className="ml-2 group-hover:text-sky-700" />
+                      <HiMiniArrowRight className="ml-2 group-hover:text-sky-700 group-hover:block hidden" />
                     </div>
                   </div>
                 </NavLink>
