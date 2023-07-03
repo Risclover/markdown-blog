@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.22d6c75e.css",
-    "main.js": "/blog/static/js/main.0613acc8.js",
+    "main.css": "/blog/static/css/main.d08eaa9d.css",
+    "main.js": "/blog/static/js/main.f403cfed.js",
     "static/media/avatar2.png": "/blog/static/media/avatar2.a95334d27599c3fc5611.png",
     "static/media/Wotfard-Regular.woff": "/blog/static/media/Wotfard-Regular.a8f6825022171f73638a.woff",
     "index.html": "/blog/index.html",
-    "main.22d6c75e.css.map": "/blog/static/css/main.22d6c75e.css.map",
-    "main.0613acc8.js.map": "/blog/static/js/main.0613acc8.js.map"
+    "main.d08eaa9d.css.map": "/blog/static/css/main.d08eaa9d.css.map",
+    "main.f403cfed.js.map": "/blog/static/js/main.f403cfed.js.map"
   },
   "entrypoints": [
-    "static/css/main.22d6c75e.css",
-    "static/js/main.0613acc8.js"
+    "static/css/main.d08eaa9d.css",
+    "static/js/main.f403cfed.js"
   ]
 }
