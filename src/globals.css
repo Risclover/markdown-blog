@@ -74,4 +74,10 @@
       @apply text-5xl;
     }
   }
+
+  ul {
+    list-style-type {
+      @apply list-disc;
+    }
+  }
 }

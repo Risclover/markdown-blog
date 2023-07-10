@@ -6,6 +6,7 @@ import HomeHeader from "./components/HomeHeader";
 import PostHeader from "./components/PostHeader";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App({ postList, categoriesList, pageType }) {
   const [postPage, setPostPage] = useState(false);
@@ -19,7 +20,7 @@ function App({ postList, categoriesList, pageType }) {
   return (
     <div
       id="app"
-      className={`smooth-scroll dark-mode bg-white-100 min-h-screen font-rubik transition duration-200 dark:bg-gray-900`}
+      className={`smooth-scroll dark-mode bg-white-100 min-h-screen font-rubik transition duration-200 dark:bg-gray-900 flex flex-col`}
     >
       <Header>
         <NavBar setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
@@ -32,6 +33,7 @@ function App({ postList, categoriesList, pageType }) {
       <div className="m-auto">
         <Outlet context={[postPage, setPostPage]} />
       </div>
+      <Footer />
     </div>
   );
 }

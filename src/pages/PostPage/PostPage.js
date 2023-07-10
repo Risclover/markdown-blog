@@ -6,6 +6,7 @@ import gfm from "remark-gfm";
 import toc from "remark-toc";
 import parse from "html-react-parser";
 import rehypeRaw from "rehype-raw";
+import "./PostPage.css";
 
 export default function PostPage({ postList, postType }) {
   const { id } = useParams();
