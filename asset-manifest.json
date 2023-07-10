@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-blog/static/css/main.813ffe48.css",
-    "main.js": "/react-blog/static/js/main.81d3b42a.js",
+    "main.js": "/react-blog/static/js/main.eba7a3ae.js",
     "static/media/avatar2.png": "/react-blog/static/media/avatar2.a95334d27599c3fc5611.png",
     "static/media/Wotfard-Regular.woff": "/react-blog/static/media/Wotfard-Regular.a8f6825022171f73638a.woff",
     "index.html": "/react-blog/index.html",
     "main.813ffe48.css.map": "/react-blog/static/css/main.813ffe48.css.map",
-    "main.81d3b42a.js.map": "/react-blog/static/js/main.81d3b42a.js.map"
+    "main.eba7a3ae.js.map": "/react-blog/static/js/main.eba7a3ae.js.map"
   },
   "entrypoints": [
     "static/css/main.813ffe48.css",
-    "static/js/main.81d3b42a.js"
+    "static/js/main.eba7a3ae.js"
   ]
 }
