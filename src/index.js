@@ -74,17 +74,17 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
-        path: "/blog",
+        path: "/react-blog",
         element: <Home pageType={pageType} categoriesList={categoriesList} />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/blog/posts/:id",
+        path: "/react-blog/posts/:id",
         element: <PostPage postList={postList} />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/blog/categories/:id",
+        path: "/react-blog/categories/:id",
         element: (
           <CategoryPage
             pageType={pageType}
