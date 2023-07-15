@@ -20,7 +20,9 @@ function App({ postList, categoriesList, pageType }) {
   return (
     <div
       id="app"
-      className={`smooth-scroll dark-mode bg-white-100 min-h-screen font-rubik transition duration-200 dark:bg-gray-900 flex flex-col`}
+      className={`smooth-scroll dark-mode min-h-screen font-rubik transition duration-200 dark:bg-gray-900 flex flex-col ${
+        pageType === "category" ? "bg-gray-100" : "bg-white"
+      }`}
     >
       <Header>
         <NavBar setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />

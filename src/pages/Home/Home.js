@@ -42,7 +42,7 @@ export default function Home({ categoriesList }) {
         </h2>
         <div className="grid grid-cols-1 gap-1 grid-flow-row ">
           {postList.map((post) => (
-            <Link to={`/blog/posts/${post.id}`}>
+            <Link to={`/react-blog/posts/${post.id}`}>
               <BlogPost post={post} />
             </Link>
           ))}

@@ -3,9 +3,11 @@ import { NavLink, useOutletContext, useParams } from "react-router-dom";
 import "./CategoryPage.css";
 import { HiMiniArrowRight } from "react-icons/hi2";
 
-export default function CategoryPage({ categories, postList }) {
+export default function CategoryPage({ categories, postList, pageType }) {
   const { id } = useParams();
   const [postPage, setPostPage] = useOutletContext();
+
+  pageType = "category";
 
   useEffect(() => {
     setPostPage();
@@ -21,7 +23,7 @@ export default function CategoryPage({ categories, postList }) {
           {postList.map(
             (post) =>
               post?.category === categories[id - 1]?.category && (
-                <NavLink to={`/blog/posts/${post?.id}/#`}>
+                <NavLink to={`/react-blog/posts/${post?.id}/#`}>
                   <div className="category-box cursor-pointer group h-full dark:bg-slate-800 dark:text-gray-50">
                     <div className="mb-3">
                       <h2 className="text-[22px] font-bold group-hover:text-sky-700 mb-1">

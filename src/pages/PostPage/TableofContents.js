@@ -5,6 +5,7 @@ export default function TableofContents({ toc }) {
   const headingsRef = useRef();
   const scrollRef = useRef(0);
   const [active, setActive] = useState(""); //active
+
   useEffect(() => {
     const headings = Array.from(
       document.querySelectorAll("h1[id], h2[id], h3[id], h4[id]")
@@ -37,6 +38,7 @@ export default function TableofContents({ toc }) {
         threshold: 0.2,
       }
     );
+
     headings.forEach((e) => observer.observe(e));
   });
 

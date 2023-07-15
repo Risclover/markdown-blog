@@ -21,12 +21,12 @@ export default function PostHeader({ postList, categoriesList }) {
   return (
     <div className="sm:h-72 flex flex-col justify-end text-slate-50 z-10">
       <div className="mt-20 mb-5 text-slate-50 capitalize">
-        <NavLink to="/blog" className="hover:text-gray-400">
+        <NavLink to="/react-blog" className="hover:text-gray-400">
           <span>Home</span>
         </NavLink>
         <span className="mx-5">&gt;</span>
         <NavLink
-          to={`/blog/categories/${category}`}
+          to={`/react-blog/categories/${category}`}
           className="hover:text-gray-400"
         >
           <span>{post?.category}</span>
